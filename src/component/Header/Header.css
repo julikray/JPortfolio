@@ -1,0 +1,122 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba((0), 0,0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    backdrop-filter: blur(50px);
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul li {
+    display: inline-block;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  
+  .toggle-button {
+    display: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  
+  .headerlink {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    position: relative;
+  }
+
+  .headerlink::before{
+    content: " ";
+    width: 1rem;
+    height: 0.2rem;
+    background: linear-gradient(90deg,#a993fe 0%,#7e61e7 100%);
+    border-radius: 0.5rem;
+    position: absolute;
+    bottom: -0.6rem;
+    opacity: 0;
+    transform: translateX(-1.5rem);
+    transition: all 0.3s ease;
+
+  }
+
+  .headerlink:hover::before{
+    width: 100%;
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links-mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    z-index: 1;
+  
+  }
+  
+  .nav-links-mobile li {
+    text-align: center;
+    padding: 30px 0;
+    width: 100%;
+    transition: all 0.5s ease;
+    background-color: #251f43;
+  }
+  
+  @media (max-width: 578px) {
+    .navbar { 
+      height: 40px;
+     
+    } 
+    .toggle-button {
+      display:block;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      outline: none;
+      right: 25px;
+    
+       
+    }
+    .nav-links {
+      display: none;
+      
+    }
+    .nav-links-mobile {
+      display: block;
+      list-style: none;
+      width: 100%;
+      margin-top: 60px;
+      transition: all 0.5s ease-out;
+    }
+    li {
+      text-align: center;
+      padding: 10px 0;
+      transition: all 0.5s ease;
+    }
+  }

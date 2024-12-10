@@ -1,0 +1,43 @@
+  .portfolio-footer {
+    background: #130f2a;
+    color: #ecf0f1;
+    padding: 20px 10px;
+    text-align: center;
+    border: 1.5px solid #6751b9;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .social-links {
+    margin-bottom: 10px;
+  }
+  
+  .social-links a {
+    color: #ecf0f1;
+    margin: 0 10px;
+    font-size: 30px;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  
+  
+  .footer-container p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .footer-container p a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  .footer-container p a:hover {
+    text-decoration: underline;
+  }
+  

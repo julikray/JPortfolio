@@ -1,0 +1,166 @@
+/* About Section Styles */
+.about-section {
+  width: 100%;
+  padding: 2.5rem 12%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-intro {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-size: 1.125rem;
+}
+
+.about-title {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  margin: 3rem 0;
+}
+
+.about-tools-heading {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #a793f1;
+}
+
+/* List of Tools */
+.tools-list {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.tool-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #6751b9;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.tool-item:hover {
+  transform: translateY(-5px);
+}
+
+.tool-icon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+@media (min-width: 1024px) {
+  .about-container {
+    flex-direction: row;
+  }
+}
+
+.about-image-container {
+  max-width: max-content;
+  margin: 0 auto;
+  position: relative;
+}
+
+.user-image {
+  width: 16rem;
+}
+
+@media (min-width: 640px) {
+  .user-image {
+    width: 20rem;
+  }
+}
+
+.image-overlay {
+  background-color: white;
+  width: 50%;
+  aspect-ratio: 1;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  transform: translateX(25%) translateY(33%);
+  box-shadow: 0 4px 55px rgba(149, 0, 162, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circular-text {
+  width: 100%;
+  animation: spin 10s linear infinite;
+}
+
+.dev-icon {
+  width: 25%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.about-info {
+  flex: 1;
+}
+
+.about-description {
+  margin-bottom: 2.5rem;
+  max-width: 36rem;
+}
+
+.about-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  max-width: 36rem;
+}
+
+@media (min-width: 640px) {
+  .about-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.about-list-item {
+  border: 1.5px solid #6751b9;
+  border-radius: 1rem;
+  padding: 2rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.language-icon {
+  width: 1.75rem;
+  margin-top: 1rem;
+}
+
+.about-list-title {
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.about-list-description {
+  color: #a793f1;
+  font-size: 0.875rem;
+}
